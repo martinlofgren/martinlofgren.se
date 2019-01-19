@@ -13,46 +13,48 @@ enableRobotsTXT = true
 customCSS = ["css/custom.css"]
 
 [params.rss]
-
 includeContent = true # Includes whole content in rss
 authorName = "Martin Löfgren" # Site author's full name
 authorEmail = "info@martinlofgren.se"
 
 [params.info]
-adsense = "" # Adsense ID (ID only, without ca-pub-)
+#adsense = "" # Adsense ID (ID only, without ca-pub-)
 enableSocial = false # Adds OpenGraph and Twitter cards
 homeTitle = "martinlofgren.se" # Title for home page
-poweredby = false # Adds powered by Hugo and Kiss below Copyright section
-related = true # Includes related articles
+poweredby = true # Adds powered by Hugo and Kiss below Copyright section
+#related = true # Includes related articles
 
-[params.opengraph.facebook]
-admins = [] # array of Facebook IDs
-appID = ""
-pageID = ""
+#[params.opengraph.facebook]
+#admins = [] # array of Facebook IDs
+#appID = ""
+#pageID = ""
 
-[params.opengraph.twitter]
-page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+#[params.opengraph.twitter]
+#page = "" # Twitter Page username. If not set, params.social.twitter will be used.
 
 [params.social]
-
 #twitter = "ribicemir"
 github = "martinlofgren"
 email = "info@martinlofgren.se"
-linkedin = "martinlofgren"
+linkedin = "martin-lofgren"
 #gitlab = "ribice"
 #instagram = ""
 #codepen = ""
 #facebook = ""
 
+[params.sections_left]
+#"/" = "Home"
+#"/about" = "About"
+
 [params.social.config]
-platforms = ["github","email","linkedin"]
+platforms = ["email","github","linkedin"]
 
-[params.matomoAnalytics]
-siteID = 1
-rootURL = "//matomo.example.com/"
+#[params.matomoAnalytics]
+#siteID = 1
+#rootURL = "//matomo.example.com/"
 
-[params.fathomAnalytics]
-rootURL = "//fathom.example.com/"
+#[params.fathomAnalytics]
+#rootURL = "//fathom.example.com/"
 
 [taxonomies]
 tag ="tags"
