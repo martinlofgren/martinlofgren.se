@@ -13,7 +13,7 @@ ways to describe the envelope with an equation:
 - [The Folium of Descartes][1] rotated clockwise 45°
 - An half ellipsis with tangential lines drawn to make a sharp corner.
 
-All these attempts seemed overly complicated, or was not flexible enough to
+All these attempts seemed overly complicated, or were not flexible enough to
 describe an arbitrary airship envelope. I had to find something else.
 
 Sketching the envelope in Inkscape using the path tool, it occured to me that
@@ -25,7 +25,7 @@ the x axis to give a better visualization of the profile.
 
 ![Bezier curve approximating airship envelope](/img/envelope-bezier.png)
 
-The control points were determined by trail-and-error to be
+The control points were determined by trial-and-error to be
 {{< tex display="" >}}
 \begin{cases}
   P_0 = (0,0), \\
@@ -41,7 +41,7 @@ In this particular plot, {{< tex >}} L=2000 \text{ mm}, R_{max}=166\text{ mm}.
   B(t) = (1-t)^3 P_0 + 3(1-t)^2 t P_1 + 3(1-t) t^2 P_2 + t^3 P_3,\; t \in [0,1].
 {{< /tex >}}
 
-The plot were made using Python and NumPy. The source code can be found in the
+The plot was made using Python and NumPy. The source code can be found in the
 [git repo][3].
 
 [0]: http://jwilson.coe.uga.edu/EMAT6680Fa2014/Gieseking/Exploration%2010/Parametric%20Equations.html
