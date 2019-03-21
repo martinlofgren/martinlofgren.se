@@ -1,9 +1,15 @@
 ---
 title: "From Bézier Curve to Cartesian Equation"
-date: 2019-02-02T21:52:02+01:00
-draft: true
+date: 2019-03-21T21:52:02+01:00
+draft: false
 tags: [airship]
 hasMath: true
+---
+
+It's been a while since working on the airship project, and since writing
+about it here; it's been a lot to do in school and at work. This post has been
+lying around for a month, but for some reason I did not publish it. 
+
 ---
 
 In the [previous post][0] we derived a formula for the envelope using a Bézier
@@ -33,9 +39,10 @@ small {{< tex >}} \Delta_n {{< /tex >}} and collect the results in a list.
 In this manner, we have a list of points along the curve, ordered by 
 {{< tex >}} x {{< /tex >}}. To find a good approximation of 
 {{< tex >}} f(x) {{< /tex >}}, we simply do a lookup in the list for
-{{< tex >}} x {{< /tex >}}. If we denote this "function" 
+{{< tex >}} x {{< /tex >}}. If we denote this function[^1]
 {{< tex >}} \hat{f}(x) {{< /tex >}}, we see that 
 {{< tex >}} \hat{f}(x) \to f(x) {{< /tex >}}as 
 {{< tex >}} \Delta_n \to 0 {{< /tex >}}.
 
 [0]: {{< relref path="deriving-a-formula-for-the-envelope" >}}
+[^1]: Although it might be dubious whether this really is a function in the mathematical sense of the word, it can be treated so in the numerical calculation contexts we will be using it.
